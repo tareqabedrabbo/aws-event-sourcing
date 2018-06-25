@@ -1,0 +1,9 @@
+aws:
+  accessKey: dummy
+  secretKey: dummy
+  kinesis.producer:
+    region: eu-west-2
+    maxConnections: 1
+    requestTimeout: 3000
+    recordMaxBufferedTime: 3000
+    inputStream: event-input-stream
