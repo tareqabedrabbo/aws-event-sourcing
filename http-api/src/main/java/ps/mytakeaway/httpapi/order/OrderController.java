@@ -15,6 +15,7 @@ public class OrderController {
     @PutMapping(path = "/{orderId}", consumes = "application/json")
     public ResponseEntity<Void> order(@PathVariable String orderId,
                                       @RequestBody CreateOrderRequest createOrderRequest) throws Exception {
+        createOrderRequest.setOrderId(orderId);
         ResponseEntity<Void> responseEntity = new ResponseEntity<Void>(HttpStatus.OK);
         orderCommandService.createCommand(createOrderRequest);
         return responseEntity;

@@ -27,7 +27,6 @@ public class CreateOrderRequestTest {
         CreateOrderRequest request = json.parseObject(content);
 
         assertThat(request.getUserId()).isEqualTo("user1");
-        assertThat(request.getOrderId()).isEqualTo("order123");
         assertThat(request.getEventTs()).isEqualTo(1532016680348l);
         assertThat(request.getDeliveryAddress()).isEqualTo("some address");
         assertThat(request.getItems()).contains("item1", "item2");

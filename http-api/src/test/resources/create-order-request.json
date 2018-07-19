@@ -1,6 +1,5 @@
 {
   "eventTs": 1532016680348,
-  "orderId": "order123",
   "userId": "user1",
   "deliveryAddress": "some address",
   "items": ["item1", "item2"]
